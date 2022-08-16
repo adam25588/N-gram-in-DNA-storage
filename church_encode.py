@@ -40,8 +40,8 @@ def encode():
 
 if __name__ == "__main__":
     opts = get_opt()
-    input = open(opts.inputfile)
-    output = open(opts.outfile,'w')
+    input = open(opts.inputfile，encoding='utf-8')
+    output = open(opts.outfile,'w',encoding='utf-8')
     f_type = opts.type
     encode()
     input.close()
